@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Astronaut Ai</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      height: 100vh;
+      background: url('https://t3.ftcdn.net/jpg/07/93/42/90/360_F_793429029_CY9ukkwpX4VDlSujpXfFPUgwru5S3kEh.jpg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+    }
+
+    .hero-text {
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .hero-text p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin: 20px 0;
+      animation: fadeInUp 2.5s ease-in-out;
+    }
+
+    .btn-primary {
+      background-color: #9900b8;
+      border: none;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      animation: fadeInUp 3s ease-in-out;
+    }
+    .btn-primary:hover{
+      background-color: #c302e9;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Features Section */
+    .features-section {
+      padding: 100px 0;
+      background-color: #f7f7f7;
+    }
+
+    .features-section .feature-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+
+    .features-section .feature-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+
+    .features-section .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .features-section .feature-box:hover img {
+      transform: scale(1.1);
+    }
+
+    .feature-box h4 {
+      font-size: 1.5rem;
+      color: #b800b2;
+      margin-top: 15px;
+    }
+
+    .feature-box p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Product Description Section */
+    .product-description {
+      padding: 100px 0;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .product-description img {
+      border-radius: 15px;
+      max-width: 80%;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .product-description img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-description h2 {
+      font-size: 2.5rem;
+      color: #b800b2;
+      margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 50px 0;
+      background-color: #f7f7f7;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #b800b2;
+    }
+
+    .contact-section p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-success {
+      background-color: #b800b2;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-success:hover {
+      background-color: #8c0075;
+    }
+    
+    /* Footer */
+    .footer-section {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Astronaut Ai</h1>
+      <p>Your personal AI assistant is here to help you achieve more.</p>
+      <a href="download.html" class="btn btn-primary">Request a Demo</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2 style="color: #b800b2;" class="text-center ">About us</h2>
+      <br>
+      <br>
+      <div style="text-align: center;" class="row">
+
+        <div class="col-md-15">
+          <div class="feature-box">
+            <img src="https://t4.ftcdn.net/jpg/08/61/60/87/240_F_861608728_yZOJFyUzfK3JyCY0GGI1bOdyCwJIYAZb.jpg" alt="AI Feature 2">
+            <br>
+            <br>
+            <br>
+            <h4>adko1396</h4>
+            <p>Developer and Programmer of the Project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Description Section -->
+  <section class="product-description">
+    <div class="container">
+      <br>
+      <h2>National University of Skill</h2>
+      <br>
+      <img src="https://static.evand.net/images/description/original/02960fdd782138bbbca6ebdca9cac307.png" alt="AI Product">
+      <p>This project has been developed for the Artificial Intelligence course under the supervision of a professor at this university.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Project Creator and Developer Information.</p>
+      <a href="https://github.com/adko1396" class="btn btn-success">Github</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <p><a style="text-decoration: none; color: #f7f7f7;" href="https://github.com/astronautai">GitHub Project</a></p>
+  </footer>
+
+  <!-- Bootstrap JS & jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
